@@ -11,6 +11,8 @@
 #include "Implementation.h"
 #include "Protocol.h"
 #include <vector>
+#include "AST.h"
+
 using namespace std;
 class Symbol_Table
 {
@@ -18,6 +20,8 @@ public:
 	
 	Scope * currScope;
 	Scope * rootScope;
+	class TreeNode * Main_node;
+	int Mainexists;
 	Variable * insertVariableInCurrentScope(char* name,Type  t,int visability);
 	Variable * insertVariableInCurrentScope(char* name,Type  t,int visability,int offset,TreeNode* tn);
 	Variable *insertVariableInCurrentScope(char* name,void* type1,int visability);
@@ -43,6 +47,9 @@ public:
 	Implementation * insertImplementationInCurrentScope(char* name,char* Inhert_name);
 	void insert_scope1(char *name,Scope *scope);
 	void insert_scope2(char *name,Scope *scope);
+	void Set_main(class TreeNode * tn);
+	class TreeNode * Get_main();
+
 	Symbol_Table(void);
 	~Symbol_Table(void);
 };

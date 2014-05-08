@@ -100,6 +100,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Symbol.h" />
     <ClInclude Include="Symbol_Table.h" />
+    <ClInclude Include="TypeCheck.h" />
     <ClInclude Include="TypeHelper.h" />
     <ClInclude Include="Variable.h" />
   </ItemGroup>
@@ -126,6 +127,7 @@
     </ClCompile>
     <ClCompile Include="Symbol.cpp" />
     <ClCompile Include="Symbol_Table.cpp" />
+    <ClCompile Include="TypeCheck.cpp" />
     <ClCompile Include="TypeHelper.cpp" />
     <ClCompile Include="Variable.cpp" />
   </ItemGroup>

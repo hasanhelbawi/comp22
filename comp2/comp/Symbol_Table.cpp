@@ -6,10 +6,23 @@
 #include "AST.h"
 #include <string>
 
+void Symbol_Table::Set_main(class TreeNode * tn)
+{
+	Main_node=tn;
+	Mainexists=1;
+}
+
+class TreeNode * Symbol_Table::Get_main()
+{
+	 return Main_node;
+}
+
+
 Symbol_Table::Symbol_Table(void){
 	this->rootScope = new Scope();
 	this->currScope = this->rootScope;
 	this->insertInterfaceInCurrentScope("NSObject");
+	Mainexists=0;
 }
 
 Symbol_Table::~Symbol_Table(void){

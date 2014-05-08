@@ -72,6 +72,9 @@
     <ClInclude Include="Code_Generation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TypeCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -131,6 +134,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Code_Generation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeCheck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

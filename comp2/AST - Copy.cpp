@@ -12,12 +12,7 @@ char* arr [] =	{"intNode", "floatNode", "stringNode","CharNode","IdentNode","lon
 		,"EnumNode","structNode","arrayoneNode","arraybodyNode","ArrayNNode","ArrayNMultiNode","array_body2Node","typeNode","simple_type_INT"
 		,"simple_type_CHAR","simple_typeFLOAT","simple_type_NSSTRING","simple_type_VOID","complex_type","interface_declaration_list_Node",
 		"class_method_declaration","instance_method_declaration","p_typeNode","method_selector_Node","parameter_Node","paramListNode",
-		"SmpExpPlusNode","SmpExpMinusNode","SmpExpMultiNode","SmpExpDivNode","BOOLNode"};
-
-TreeNode::TreeNode(void)
-{
-	mainNode=false;
-}
+		"SmpExpPlusNode","SmpExpMinusNode","SmpExpMultiNode","SmpExpDivNode"};
 
 AST::AST(void)
 {
